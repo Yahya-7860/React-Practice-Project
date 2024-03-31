@@ -1,0 +1,47 @@
+:root {
+  --red: #D01C28;
+}
+
+body {
+  font-family: sans-serif;
+}
+.main_container {
+  width: 70vw;
+  margin: auto;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  gap: 1rem;
+}
+.loginbtn {
+  border: none;
+  background-color: var(--red);
+  color: white;
+  padding: 0.5rem 0.7rem;
+}
+.logbtn {
+  border: 0.1rem solid black;
+  background-color: transparent;
+  padding: 0.5rem 0.7rem;
+}
+.mainContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bigFont {
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+.main_btn {
+  display: flex;
+  gap: 1rem;
+}
