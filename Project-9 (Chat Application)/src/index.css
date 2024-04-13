@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    scrollbar-width: thin; /* Set width to thin (works on Firefox) */
+    scrollbar-color: transparent transparent; /* Set color to transparent */
+  }
