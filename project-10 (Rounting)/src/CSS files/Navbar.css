@@ -1,0 +1,92 @@
+:root {
+    --infoColor: rgb(82, 191, 234);
+    --wite: #ecf0f1;
+    --lighblack: #2c3e50;
+    --infoDark: rgb(25, 141, 187);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.nav_container{
+    max-width: 100vw;
+}
+
+header {
+    background-color: var(--lighblack);
+    padding: 0.6rem 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100%-4rem);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    color: var(--wite);
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-right: 1.3rem;
+}
+
+.login-button {
+    color: var(--wite);
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+    border: 0.1rem solid var(--wite);
+    border-radius: 0.3rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-button:hover {
+    background-color: var(--wite);
+    color: var(--infoColor);
+}
+.nav-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    gap: .7rem;
+}
+
+.nav-right a {
+    color: var(--wite);
+    text-decoration: none;
+    /* margin-left: 1.3rem; */
+    transition: color 0.1s;
+    cursor: pointer;
+}
+
+.nav-right a:hover {
+    color: var(--infoColor);
+}
+
+.nav-right a:active {
+    color: var(--infoDark);
+}
+
+.info {
+    color: var(--infoColor);
+}
+
+@media only screen and (max-width: 490px) {
+    .nav-right{
+        font-size: .9rem;
+    }
+  }
+
+@media only screen and (max-width: 460px) {
+    .nav-right{
+        font-size: .7rem;
+    }
+  }

@@ -1,0 +1,49 @@
+:root{
+    --white:white;
+    --lightDark:#2c3e50;
+}
+.dashboard-container {
+    padding: 2rem;
+    background-color: var(--white);
+    height: 100vh;
+}
+
+h1 {
+    display: grid;
+    place-items: center;
+}
+
+.dashboard-tables {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.dashboard-table {
+    width: 100%;
+    max-width: 45%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.dashboard-table th, 
+.dashboard-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 0.1rem solid #ddd;
+}
+
+.dashboard-table th {
+    background-color:var(--lightDark) ;
+    color: var(--white);
+}
+
+@media screen and (max-width:650px) {
+    .dashboard-tables{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,82 @@
+:root{
+    --red:#e74c3c;
+    --white:white;
+    --green:#2ecc71;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    padding: .5rem 1rem;
+    border-radius: 0.5rem;
+    min-width: calc(100% - 20rem);
+    box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.card_container{
+    display: grid;
+    place-items: center;
+    margin: 1rem 0rem;
+}
+.requestHeading{
+    display: grid;
+    place-items: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info h3 {
+    margin-left: 1rem;
+    font-size: 1.25rem;
+}
+
+.card-buttons button {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.reject-button {
+    background-color: var(--red);
+    color: white;
+}
+
+.reject-button:hover {
+    background-color: #c0392b;
+}
+
+.accept-button {
+    background-color: var(--green);
+    color: white;
+}
+
+.accept-button:hover {
+    background-color: #27ae60;
+}
+
+@media screen and (max-width:500px) {
+    .profile-info h3{
+        font-size: 1rem;
+    }
+    .card-buttons button{
+        font-size: .7rem;
+    }
+    .profile-photo{
+        width: 3rem;
+        height: 3rem;
+    }
+}
